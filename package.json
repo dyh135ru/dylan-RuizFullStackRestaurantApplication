@@ -1,12 +1,14 @@
 {
-  "homepage": "https://dyh135ru.github.io/",
+  "homepage": "https://dyh135ru.github.io/dylan-RuizFullStackRestaurantApplication",
   "name": "restaurant-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
   },
   "dependencies": {
     "@apollo/client": "^3.2.4",
