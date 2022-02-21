@@ -1,20 +1,18 @@
 {
-  "homepage": "https://dyh135ru.github.io/dylan-RuizFullStackRestaurantApplication",
   "name": "restaurant-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build"
+    "build": "next build && next export",
+    "start": "next start"
   },
   "dependencies": {
     "@apollo/client": "^3.2.4",
     "@stripe/react-stripe-js": "^1.1.2",
     "@stripe/stripe-js": "^1.10.0",
     "axios": "^0.21.0",
+    "build": "^0.1.4",
     "graphql": "^15.3.0",
     "isomorphic-fetch": "^3.0.0",
     "js-cookie": "^2.2.1",
